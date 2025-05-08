@@ -9,8 +9,9 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center bg-[url(/assets/photos/bg.jpeg)] p-4 bg-cover">
-      <div className="h-full w-full max-w-lg bg-gradient-to-b from-white to-zinc-100 shadow-xl rounded-md overflow-hidden">
+    <div className="relative h-screen w-full flex items-center justify-center p-4 overflow-hidden">
+      <div className="absolute inset-0 bg-[url(/assets/photos/bg.jpeg)] bg-cover filter blur-sm z-0"></div>
+      <div className="h-full w-full max-w-lg bg-gradient-to-b from-white to-zinc-100 shadow-xl rounded-md overflow-hidden z-10">
         <div className="flex flex-col items-center gap-4 overflow-y-auto size-full px-4 py-8">
           <div className="size-32 p-4 bg-zinc-200 rounded-full">
             <img src={logoImage} alt="logo.png" className="size-full" />
