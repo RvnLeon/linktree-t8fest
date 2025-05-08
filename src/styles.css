@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+
+body {
+  font-family: 'Inter Variable', sans-serif;
+}
+
+@theme {
+  --color-tx-50: #feffe7;
+  --color-tx-100: #fcffc1;
+  --color-tx-200: #fdff86;
+  --color-tx-300: #fffa41;
+  --color-tx-400: #ffed0d;
+  --color-tx-500: #ffdf01;
+  --color-tx-600: #d1a500;
+  --color-tx-700: #a67602;
+  --color-tx-800: #895c0a;
+  --color-tx-900: #744b0f;
+  --color-tx-950: #442804;
+}
