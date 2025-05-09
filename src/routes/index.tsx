@@ -9,19 +9,23 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <div className="relative h-screen w-full flex items-center justify-center p-4 overflow-hidden">
-      <div className="absolute inset-0 bg-[url(/assets/photos/bg.jpeg)] bg-cover filter blur-sm z-0"></div>
+    <div className="relative h-screen w-full flex items-center justify-center p-4 overflow-hidden flex-col">
+      <div className="absolute inset-0 bg-[url(/assets/photos/bg.jpeg)] bg-cover filter blur-[2px] z-0"></div>
       <div className="h-full w-full max-w-lg bg-gradient-to-b from-white to-zinc-100 shadow-xl rounded-md overflow-hidden z-10">
         <div className="flex flex-col items-center gap-4 overflow-y-auto size-full px-4 py-8">
-          <div className="size-32 p-4 bg-zinc-200 rounded-full">
+          <div className="size-48 p-3 bg-zinc-200/50 rounded-full">
             <img src={logoImage} alt="logo.png" className="size-full" />
           </div>
-          <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-tx-400 to-tx-500 ">
-            T8CHNOFEST
-          </h1>
-          <p className="-mt-4 text-sm">Cerdas, Tangguh, Peduli</p>
+          <h1 className="text-6xl font-light ">T8CHNOFEST</h1>
+          <p className="-mt-4 text-sm font-medium">
+            Teknologi dan Soundsystems
+          </p>
           <div className="flex flex-col gap-4 size-full">
-            <LinkButton icon={BookOpenText} label="Juklak Juknis T8" to="" />
+            <LinkButton
+              icon={BookOpenText}
+              label="Juklak Juknis T8"
+              to="/juknis"
+            />
             <LinkButton
               icon={BookOpenText}
               label="CP Umum"
@@ -49,6 +53,9 @@ function App() {
             />
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-2 right-2">
+        <p className="text-white font-thin">Created by Malik and Revan</p>
       </div>
     </div>
   )
